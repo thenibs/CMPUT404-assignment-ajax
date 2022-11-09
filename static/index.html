@@ -278,9 +278,7 @@ mouse.mouseuppers.push(function(x,y,clicked,e) {
 colors3 = ["Aqua", "Purple", "Blue", "Cyan"]
 mouse.mousedraggers.push(function(x,y,clicked,e) {
     addEntityWithoutName({'x':x,'y':y,'colour':colors3[Math.floor(Math.random() * colors3.length)],
-                          'radius':10});
-    addEntityWithoutName({'x':x,'y':y,'colour':'white',
-                          'radius':1});                      
+                          'radius':5});                     
 });
 
 function updateCallback(updatedJson) {
